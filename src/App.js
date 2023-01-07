@@ -5,6 +5,7 @@ import { CreateContainer, Header, MainContainer } from "./Components";
 import { useStateValue } from "./Context/StateProvider";
 import { getAllFoodItems } from "./Utils/firebaseFunctions";
 import { actionType } from "./Context/Reducer";
+import About from "./Components/Header/About";
 
 const App = () => {
   const [{ foodItems }, dispatch] = useStateValue();
@@ -31,6 +32,9 @@ const App = () => {
           <Routes>
             <Route path="/*" element={<MainContainer />} />
             <Route path="/createItem" element={<CreateContainer />} />
+            <Route path="/about" element={<About />} />
+
+          
           </Routes>
         </main>
       </div>
