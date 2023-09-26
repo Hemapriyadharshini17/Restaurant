@@ -44,3 +44,6 @@ replace content in tailwind.config.js
 
 --Install 
 ### `npm install --save-dev tailwind-scrollbar`
+
+--Deployed using vercer
+https://restaurant-nu-pink.vercel.app/
